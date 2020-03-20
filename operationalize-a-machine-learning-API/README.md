@@ -1,4 +1,4 @@
-#Udacity Nanodegree - Operationalize a Machine Learning API
+# Udacity Nanodegree - Operationalize a Machine Learning API
 
-#Goal of this Project
+# Goal of this Project
 ....
