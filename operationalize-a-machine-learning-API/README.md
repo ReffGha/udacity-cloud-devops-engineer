@@ -4,9 +4,20 @@
 
 ## Project Overview
 
-In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
+Goal of this project is to operationalize a Machine Learning API in a Microservice abstraction layer. For that purpose a pre-trained sklearn model that has been trained to predict housing prices in Boston according to several features will be used.
 
-You are given a pre-trained, `sklearn` model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. You can read more about the data, which was initially taken from Kaggle, on [the data source site](https://www.kaggle.com/c/boston-housing). This project tests your ability to operationalize a Python flask app—in a provided file, `app.py`—that serves out predictions (inference) about housing prices through API calls. This project could be extended to any pre-trained machine learning model, such as those for image recognition and data labeling.
+### Tools used in the Project 
+`Docker` for containerizing the application 
+`Kubernates` as orchestration layer to configure a cluster and deploy the application 
+`CircleCi` as cloud native Continuous Integration (CI) tool to indicate that the code has been tested
+
+### Project's files
+`make_prediction.sh` send request to the server to make a prediction 
+`app.py` server in charge of handling prediction requests 
+`upload_docker.sh` this script help uploading a docker image to the docker registry 
+`run_docker.sh` building and runnning the server in a container 
+`requirements.txt` this file contains libraries requirement for running the server 
+`run_kubernetes.sh` deploy an image to the kubernetes cluster
 
 
 ## Setup the Environment
