@@ -4,7 +4,7 @@
 
 ## Project Overview
 
-Goal of this project is to operationalize a Machine Learning API in a Microservice abstraction layer. For that purpose a pre-trained sklearn model that has been trained to predict housing prices in Boston according to several features will be used.
+Goal of this project is to operationalize a Machine Learning API in a Microservice abstraction layer. For that purpose a pre-trained sklearn model has been implemented to predict housing prices in Boston according to a variety of parameters.
 
 ### Tools used in the Project 
 `Docker` for containerizing the application 
@@ -12,12 +12,12 @@ Goal of this project is to operationalize a Machine Learning API in a Microservi
 `CircleCi` as cloud native Continuous Integration (CI) tool to indicate that the code has been tested
 
 ### Project's files
-`make_prediction.sh` send request to the server to make a prediction 
-`app.py` server in charge of handling prediction requests 
-`upload_docker.sh` this script help uploading a docker image to the docker registry 
-`run_docker.sh` building and runnning the server in a container 
-`requirements.txt` this file contains libraries requirement for running the server 
-`run_kubernetes.sh` deploy an image to the kubernetes cluster
+`make_prediction.sh` sends requests to the server/application to make a prediction 
+`app.py` the actual application that is handling the prediction requests 
+`upload_docker.sh` this script helps uploading a docker image to the (public) docker registry 
+`run_docker.sh` for building and runnning the application in a container 
+`requirements.txt` this file contains libraries required for running the application 
+`run_kubernetes.sh` deploys an image to the kubernetes cluster and starts the application
 
 
 ## Setup the Environment
